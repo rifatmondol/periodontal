@@ -1,0 +1,1023 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+:focus {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    color: #061829;
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+p.for-bar span {
+    display: inline-block;
+    width: 35px;
+    height: 5px;
+    background: #6d8283;
+    margin-left: 12px;
+}
+
+p.for-bar {
+    text-transform: uppercase;
+}
+
+.hero-section-left p,
+.about-left p,
+.about-right p {
+    color: #6d8283;
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+p.description {
+    font-size: 18px;
+    color: #666f77;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.procedures-main,
+.smile-gallery-description {
+    position: relative;
+    z-index: 1;
+    width: 790px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.procedures-main p.head,
+.smile-gallery-description p.head {
+    font-size: 18px;
+    margin: 0;
+}
+
+div#header-bottom {
+    transition: 0.6s;
+    background: #fff;
+    padding: 30px 0px;
+}
+
+div#header-bottom.active {
+    position: fixed;
+    top: 0;
+    background: #fff;
+    z-index: 999;
+    width: 100%;
+    padding: 10px 0px;
+    box-shadow: 0px 7px 10px 0px rgb(0 20 45 / 30%);
+    transition: box-shadow .3s ease-in-out, background-color .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+}
+
+div#header-bottom.active .logo img {
+    width: 200px;
+    transition-delay: 0.1s;
+}
+
+#header-top {
+    transition: .9s ease-in-out;
+    position: relative;
+    background: #fff;
+}
+
+#header-top.active {
+    top: -50px;
+    transition: .9s ease-in-out;
+}
+
+
+/* 
+    sticky header css
+
+*/
+
+#header {
+    top: 0px;
+    position: sticky;
+    transition: all 0.7s ease;
+    z-index: 99999;
+}
+
+#header.hide {
+    top: -65px;
+    box-shadow: 0px 7px 10px 0px rgb(0 20 45 / 30%);
+}
+
+
+/* 
+    sticky header css End
+
+*/
+
+.humberger_sign {
+    width: 35px;
+    display: inline-block;
+    height: 26px;
+    overflow: hidden;
+    cursor: pointer;
+    display: none;
+}
+
+.humberger_sign span.bar1 {
+    margin-left: auto;
+    width: 30px;
+    transition: 0.5s;
+}
+
+.humberger_sign span {
+    height: 4px;
+    background-color: #121315;
+    display: block;
+    margin-bottom: 7px;
+    transition: 0.3s;
+}
+
+.humberger_sign span.bar3 {
+    width: 25px;
+    margin-bottom: 0;
+    transition: 0.5s;
+}
+
+.humberger_sign:hover span.bar1,
+.humberger_sign:hover span.bar3 {
+    width: 100%;
+}
+
+.humberger_sign:hover span {
+    background-color: #023d94;
+}
+
+.times {
+    display: none;
+}
+
+.times i.fa-solid.fa-xmark {
+    font-size: 35px;
+}
+
+[data-aos][data-aos][data-aos-duration="400"],
+body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 0.7s;
+}
+
+
+/*
+=======================
+Header css start
+========================
+*/
+
+div#header-top .container,
+div#header-bottom .container {
+    max-width: 1110px;
+}
+
+.header-top-main {
+    padding: 21px 0px;
+    border-bottom: 1px solid #DBE5EE;
+    transition: 0.6s;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s ease-in-out;
+}
+
+.header-top-main p {
+    margin: 0;
+    color: #666f77;
+    font-size: 14px;
+}
+
+.header-top-main p i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.header-top-left p {
+    text-align: right;
+    padding-right: 50px;
+}
+
+div#nav-section {
+    transition: 0.6s;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo-responsive {
+    display: none;
+}
+
+.logo img {
+    width: 100%;
+    transition: 0.6s;
+}
+
+.nav-main {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-main ul {
+    /* padding-left: 40px; */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-main ul li a {
+    display: block;
+    padding: 14px;
+    color: #023d94;
+    font-weight: 500;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+.nav-main ul li a:hover {
+    background-color: transparent;
+    color: #023d94!important;
+}
+
+li.contact-link a {
+    background: #023d94;
+    border: 1px solid #023d94;
+    color: #fff!important;
+    padding: 0!important;
+    border-radius: 5px;
+    width: 140px;
+    text-align: center;
+    height: 42px;
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+}
+
+li.contact-link {
+    float: right;
+    margin-left: 26px;
+}
+
+
+/* Dropdown */
+
+.nav-main ul li.drop-down {
+    position: relative!important;
+}
+
+.nav-main ul li.drop-down ul.sub-menu {
+    display: block;
+    position: absolute;
+    padding-left: 15px;
+    width: 170px;
+    background: #fdfdfd;
+    box-shadow: 5px 5px 15px #b7b7b7;
+    z-index: 2;
+    left: 0;
+    top: 140%;
+    visibility: hidden;
+    opacity: 0;
+    border-top: 5px solid #023d94;
+    transition: 0.4s;
+}
+
+.nav-main ul li.drop-down ul.sub-menu li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-main ul li.drop-down:hover ul.sub-menu {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+
+
+/*
+=======================
+Header css end
+========================
+*/
+
+
+/*
+=======================
+Hero css start
+========================
+*/
+
+section#hero-section {
+    position: relative;
+    z-index: 1;
+    margin-top: 35px!important;
+}
+
+.hero-section-main {
+    display: flex;
+}
+
+.hero-section-left {
+    padding-top: 85px;
+    width: 45%;
+    padding-left: 120px;
+}
+
+.hero-section-right {
+    width: 55%;
+}
+
+
+/* .hero-section-right {
+    position: absolute;
+} */
+
+.hero-section-right img {
+    filter: contrast(105%);
+    height: 615px;
+    object-fit: cover;
+}
+
+a.button-link {
+    background: #023d94;
+    border: 1px solid #023d94;
+    color: #fff!important;
+    width: 280px;
+    height: 65px;
+    border-radius: 5px;
+    margin-top: 60px;
+    font-weight: 500;
+    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+a.button-link:hover {
+    background-color: transparent;
+    color: #023d94!important;
+}
+
+
+/*
+=======================
+Hero css end
+========================
+*/
+
+
+/*
+=======================
+About css start
+========================
+*/
+
+section#about-us-section {
+    background: #F1F6FB;
+    padding-top: 215px;
+    margin-top: -45px;
+    position: relative;
+}
+
+.about-left-one {
+    margin-top: 60px;
+}
+
+.about-left.about-left-one a {
+    margin-top: 40px;
+}
+
+.about-right.about-right-one img {
+    height: 622px;
+    object-fit: cover;
+}
+
+.dentist-main {
+    display: flex;
+}
+
+.about-left.about-left-two {
+    width: 51%;
+}
+
+.about-right.about-right-two {
+    width: 49%;
+    padding: 110px 120px 100px 110px;
+}
+
+.inner-part {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.about-left.about-left-two img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-right.about-right-two h2 {
+    margin-bottom: 42px;
+}
+
+.about-right.about-right-two a {
+    margin-top: 40px;
+    width: 180px;
+}
+
+
+/*
+=======================
+About css end
+========================
+*/
+
+
+/*
+=======================
+Association css start
+========================
+*/
+
+#association-section {
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+
+.association-image.image-2 {
+    margin-top: 40px!important;
+}
+
+.association-image {
+    text-align: center;
+}
+
+.asso-item img {
+    max-width: 250px;
+    filter: contrast(0.5);
+}
+
+
+/*
+=======================
+Association css end
+========================
+*/
+
+
+/*
+=======================
+Procedure css start
+========================
+*/
+
+section#procedures-section {
+    padding: 130px 0px;
+    position: relative;
+    min-height: 100vh;
+}
+
+section#procedures-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0f7d9e;
+    opacity: 0.8;
+}
+
+.parallax-window {
+    min-height: 700px;
+    background: url(../img/Depositphotos_12461625_XL.jpg) top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.procedures-main h2,
+.procedures-main p,
+.procedures-main a {
+    color: #fff;
+}
+
+.procedures-main p.head {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.procedures-main h2 {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.link-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.link-section a {
+    background: transparent;
+    border: 1px solid #fff;
+    align-items: center;
+    width: 365px;
+    display: flex;
+    flex-direction: column;
+    height: 57px;
+    margin: 10px 6px;
+    transition: 0.5s;
+    justify-content: center;
+}
+
+.link-section a:hover {
+    background-color: #fff;
+    color: #0C647E;
+    border: 1px solid #0C647E;
+}
+
+
+/*
+=======================
+Procedure css end
+========================
+*/
+
+
+/*
+=======================
+Patient css start
+========================
+*/
+
+section#patient-section {
+    margin-top: 80px;
+}
+
+section#patient-section p.description span {
+    font-weight: 700;
+}
+
+.patient-main p {
+    display: block;
+    color: #666f77;
+    font-weight: 400;
+}
+
+.patient-main {
+    display: flex;
+}
+
+section#patient-section .about-left {
+    padding-left: 137px;
+    padding-top: 30px;
+    width: 51%;
+    padding-right: 40px;
+}
+
+section#patient-section .about-left p.description a {
+    text-decoration: underline;
+    color: #023d94;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-left a.button-link {
+    width: 220px;
+    height: 66px;
+    margin-top: 45px;
+}
+
+section#patient-section .about-right.patient img {
+    height: 845px;
+    object-fit: cover;
+}
+
+
+/*
+=======================
+Patient css end
+========================
+*/
+
+
+/*
+=======================
+Testimonial css start
+========================
+*/
+
+#testimonial-section {
+    margin-top: 90px!important;
+}
+
+.testimonial-main {
+    background: #EFEFEF;
+    padding: 0px 75px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-main p {
+    margin: 0;
+}
+
+.testimonial-main p span i {
+    color: #2b2828;
+    font-size: 22px;
+    margin-right: 7px;
+}
+
+.testimonial-main p.test-desc {
+    margin: 0;
+    color: #666f77;
+    font-size: 18px;
+    line-height: 36px;
+    margin-top: 43px;
+}
+
+.testimonial-main p span.code {
+    display: inline-block;
+    float: right;
+    color: #666f77;
+    margin-right: 30px;
+}
+
+
+/* Slider part */
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: "\f104";
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: "\f105";
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.swiper-button-prev {
+    left: 24%;
+}
+
+.swiper-button-next {
+    right: 24%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background: #023d94;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+/*
+=======================
+Testimonial css end
+========================
+*/
+
+
+/*
+=======================
+Smile gallery css start
+========================
+*/
+
+section#smile-gallery-section {
+    margin-top: 90px!important;
+}
+
+.smile-gallery-description {
+    margin-bottom: 80px;
+}
+
+.smile-gallery-description p {
+    color: #666f77!important;
+    font-size: 18px;
+}
+
+.smile-gallery-description p.head {
+    color: #6d8283;
+    text-transform: uppercase;
+}
+
+.smile-gallery-main {
+    text-align: center;
+}
+
+.smile-gallery-main h4 {
+    margin: 22px 0px;
+    color: #666f77;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.row.margin {
+    margin-top: 54px;
+}
+
+.smile-gallery-pictures {
+    border: 5px solid #ececec;
+    position: relative;
+}
+
+.smile-gallery-pictures.frst:before {
+    content: "before";
+}
+
+.smile-gallery-pictures.scnd:before {
+    content: "after";
+}
+
+.smile-gallery-pictures.frst:before,
+.smile-gallery-pictures.scnd:before {
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.smile-gallery-main a.button-link {
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+
+
+/*
+=======================
+Smile gallery css end
+========================
+*/
+
+
+/*
+=======================
+Scheduled section css start
+========================
+*/
+
+section#scheduled-section {
+    background-image: url(../img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+    position: relative;
+    margin-top: 90px!important;
+}
+
+section#scheduled-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(270deg, #19364c, transparent);
+    opacity: 0.8;
+}
+
+.scheduled-main {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff!important;
+}
+
+.scheduled-main h2 {
+    color: #fff;
+    font-size: 48px;
+}
+
+.scheduled-main a {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    margin: 45px auto;
+    transition: 0.5s;
+    width: 180px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.scheduled-main a:hover {
+    background-color: #fff;
+    color: #061829;
+}
+
+.scheduled-main p {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+}
+
+
+/*
+=======================
+Scheduled section css end
+========================
+*/
+
+
+/*
+=======================
+Footer section css start
+========================
+*/
+
+section#footer-section {
+    margin-top: 70px;
+}
+
+.footer-main ul {
+    text-align: center;
+}
+
+.footer-main ul li a {
+    display: block;
+    padding: 0px 23px;
+    color: #595959;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.footer-main ul li a:hover {
+    color: #023d94;
+}
+
+.footer-bottom-main {
+    margin-top: 70px;
+}
+
+.footer-bottom-item p {
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.footer-bottom-item,
+.footer-bottom-item a,
+p.copyright a {
+    color: #595959!important;
+}
+
+.footer-bottom-item ul li a {
+    margin-right: 5px;
+}
+
+.footer-bottom-item ul li a i {
+    font-weight: 900;
+}
+
+.footer-bottom-item a img {
+    padding: 35px;
+}
+
+.footer-bottom-item h4 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.footer-bottom-item.last {
+    text-align: right;
+}
+
+.footer-bottom-item a img {
+    width: 100%;
+}
+
+.footer-bottom-item a {
+    color: #000;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+p.review-sec {
+    text-decoration: underline;
+    margin: 0;
+}
+
+p.copyright {
+    margin: 20px 0px;
+    text-align: center;
+    color: #595959;
+    font-size: 14px;
+}
+
+p.copyright+p {
+    font-size: 12px;
+    text-align: center;
+    color: #939393;
+}
+
+p.copyright+p i {
+    width: 3px;
+    height: 3px;
+    background: #939393;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.footer-bottom-item:hover a,
+p.copyright a:hover {
+    color: #023d94!important;
+}
+
+
+/*
+=======================
+footer section css end
+========================
+*/
+
+
+/*
+==================================
+Scroll to top css
+===================================
+*/
+
+#scrollUp {
+    background: #023d94;
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    bottom: 18px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+    display: none;
+}
